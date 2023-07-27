@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookEworm - Your Online Bookstore</title>
+    <style>
+		
+		  /* Side Button Styles */
+        #register-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        #register-button:hover {
+            background-color: #444;
+        }
+		
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.2rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .book-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+        }
+
+        .book-card img {
+            max-width: 100%;
+            max-height: 200px;
+width: auto;
+height: auto;
+
+        }
+
+        .book-title {
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .book-author {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        
+        /* Enhance the Contact section styles */
+        #contact {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+        }
+
+        #contact h2 {
+            color: #333;
+        }
+
+        #contact p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        #contact div {
+            margin-bottom: 2rem;
+        }
+
+        #contact div h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        #contact div ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #contact div ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        #contact div form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        #contact div form input[type="text"],
+        #contact div form input[type="email"],
+        #contact div form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact div form textarea {
+            resize: vertical;
+        }
+
+        #contact div form button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact div form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BookEworm</h1>
+        <p>Your Online Bookstore</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    
+    <!-- Add the Register Button -->
+    <button id="register-button" onclick="redirectToRegister()">Register</button>
+
+
+    <div class="container">
+        <div class="book-card">
+            <img src="images/Java.jpg" alt="Book 1">
+            <h2 class="book-title">Core Java</h2>
+            <p class="book-author">Sharanam Shah</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu odio ac elit maximus accumsan.</p>
+        </div>
+
+        <div class="book-card">
+            <img src="images/DarkSoul.jpeg" alt="Book 2">
+            <h2 class="book-title">Dark Souls</h2>
+            <p class="book-author">Bandai Namco</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu odio ac elit maximus accumsan.</p>
+        </div>
+
+        <!-- Add more book cards here -->
+        
+    </div>
+            <section id="books">
+            <h2>Books Section</h2>
+            <p>This is the books section content.</p>
+        </section>
+
+        <!-- The "About" section starts here -->
+        <section id="about">
+            <h2>About Section</h2>
+             <p>Welcome to BookEworm, your one-stop destination for all things books! We are a passionate team of
+                bookworms who believe in the power of books to transform lives. Our mission is to bring the joy of
+                reading to book enthusiasts of all ages, offering a diverse selection of titles from classic masterpieces
+                to the latest bestsellers.</p>
+            <p>At BookEworm, we curate our collection with utmost care, ensuring that every book we offer is not only
+                entertaining but also thought-provoking and inspiring. Our goal is to foster a reading culture and
+                encourage intellectual growth among our customers.</p>
+            <p>Whether you are a seasoned reader or just starting your reading journey, we have something for you. Dive
+                into the captivating world of fiction, explore the realms of knowledge with our non-fiction selection, or
+                indulge in the enchanting world of children's books.</p>
+            <p>Join us on this wonderful journey as we embark on a quest to discover the magic of books and spread the
+                love for reading far and wide. Happy reading!</p>
+        </section>
+
+                <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! If you have any questions, suggestions, or feedback, please feel free to
+                get in touch with our team.</p>
+            <div>
+                <h3>Contact Information:</h3>
+                <ul>
+                    <li><strong>Phone:</strong> +1-800-BOOKWORM</li>
+                    <li><strong>Email:</strong> info@bookeworm.com</li>
+                </ul>
+                <h3>Visit Our Store:</h3>
+                <p>123 Main Street, Cityville, Country</p>
+            </div>
+            <div>
+                <h3>Contact Form:</h3>
+                <form action="submit_contact_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <!-- ... Your existing footer content ... -->
+    </footer>
+</body>
+
+</html>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2023 BookEworm. All rights reserved.</p>
+    </footer>
+    
+    
+    <script>
+        // Function to redirect to the register.jsp page
+        function redirectToRegister() {
+            window.location.href = "register.jsp";
+        }
+    </script>
+
+</body>
+
+</html>
